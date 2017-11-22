@@ -64,20 +64,18 @@ void printout(Node* head){
 			cout << " ";
 			p = p->link;
 		}
-		else{
-			cout << endl;
+		else
 			break;
-		}
 	}
 }
 
-void main(){
+int main(){
 	int lena, lenb;
 	cin >> lena >> lenb;
 	if (lena&&lenb){
 	Node *a = printin(lena);
-	Node *b = printin(lenb);
-	Node *c = merge(a, b);
+    Node *b = printin(lenb);
+    Node *c = merge(a, b);
 	printout(c);
 	}
 }
